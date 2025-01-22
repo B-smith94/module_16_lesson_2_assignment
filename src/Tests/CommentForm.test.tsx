@@ -1,5 +1,5 @@
 //Task 3
-
+/* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
 import CommentForm from '../Components/CommentForm'; 
@@ -61,3 +61,5 @@ describe('CommentForm', () => {
     expect(storedComments).toEqual({ title: 'test', body: 'test' })
   });
 });
+
+/* eslint-disable react/react-in-jsx-scope */
