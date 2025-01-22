@@ -24,6 +24,14 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
     },
-    
+        overrides: [
+      {
+        files: ['*.test.tsx', '*.test.ts'], // Apply special rules for test files
+        rules: {
+          'react/react-in-jsx-scope': 'off', // Ignore the react-in-jsx-scope error in test files
+          '@typescript-eslint/explicit-module-boundary-types': 'off', // Disable boundary type requirement in test files
+        },
+      },
+    ],
   },
 )
