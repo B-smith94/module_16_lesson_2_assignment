@@ -17,6 +17,7 @@ const CommentForm: React.FC = () => {
             body
         };
         localStorage.setItem('comment', JSON.stringify(comment));
+        console.log("comment successful!")
     };
 
     return (
