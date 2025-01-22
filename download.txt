@@ -1,0 +1,3 @@
+npm install bootstrap react-bootstrap
+
+npm install -D @babel/plugin-proposal-private-property-in-object @babel/preset-env @babel/preset-react @babel/preset-typescript @testing-library/jest-dom @testing-library/react @types/jest babel-jest jest jest-environment-jsdom ts-jest
