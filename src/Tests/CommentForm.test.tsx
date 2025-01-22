@@ -1,6 +1,7 @@
 //Task 3
 
 import React from 'react';
+import '@testing-library/jest-dom'
 import { render, fireEvent, screen } from '@testing-library/react';
 import CommentForm from '../Components/CommentForm'; 
 
@@ -27,7 +28,10 @@ describe('CommentForm', () => {
 
   it('renders correctly', () => {
     // test case to check if the component renders correctly
-    expect(render(<CommentForm />))
+    render(<CommentForm />)
+
+    expect(screen.getByLabelText('Title')).toBeInTheDocument();
+    expect(screen.getByLabelText("Body")).toBeInTheDocument();
   });
 
   it('handles input changes', () => {

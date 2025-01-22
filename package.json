@@ -5,6 +5,11 @@
   "type": "module",
   "jest": {
     "preset": "ts-jest",
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "./tsconfig.app.json"
+      }
+    },
     "testEnvironment": "jest-environment-jsdom",
     "transform": {
       "^.+\\.(ts|tsx)$": "babel-jest"
